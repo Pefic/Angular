@@ -1,7 +1,13 @@
 <!-- color:primary serve per assegnare il colore primario del tema ad un tag html -->
 <mat-toolbar color="primary">
   <span>Form Reattivo</span>
+  <div class="example-button-row" style="margin-left: auto;">
+    <button mat-button><a href="javascript: void" [routerLink]="['']">Singolo</a></button>
+    </div>
+  <div class="example-button-row">
+    <button mat-button><a href="javascript: void" [routerLink]="['multiplo']">Multiplo</a></button>
+    </div>
 </mat-toolbar>
 <!-- <p>Test superato</p> -->
 
-<app-mioform></app-mioform>
+<router-outlet></router-outlet>

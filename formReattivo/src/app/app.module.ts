@@ -7,12 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MioformComponent } from './mioform/mioform.component';//copiato da angular material e importato
 import {MatCardModule} from '@angular/material/card';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import { FormultiploComponent } from './formultiplo/formultiplo.component';
 import {MatInputModule} from '@angular/material/input';
-import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    MioformComponent
+    MioformComponent,
+    FormultiploComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,//dichiarato nella sezione import
     MatCardModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
