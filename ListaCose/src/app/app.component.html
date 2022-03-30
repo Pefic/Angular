@@ -1,0 +1,10 @@
+<mat-toolbar>
+  <span>Lista Cose</span>
+</mat-toolbar>
+<ul>
+  <!-- andiamo a settare i rooterlink per la navigazione interna prima del router-outlet perchè devono essere sempre visibili durante la navigazione -->
+  <li><a href="javascript:void" [routerLink]="['']">Pagina Principale</a></li>
+  <li><a href="javascript:void" [routerLink]="['commento']">Pagina Commenti</a></li>
+</ul>
+<!-- ci permette di visualizzare la pagina corrente in cui ci troviamo durante la navigazione grazie al rooting -->
+<router-outlet></router-outlet>

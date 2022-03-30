@@ -1,0 +1,10 @@
+<div [ngClass]="{green:numero<10,yellow:numero>=10 && numero<20, red:numero>=20}">
+  <h2>{{titolo}}</h2>
+  <p>{{numero}}</p>
+  <button (click)="somma()" >Incrementa</button>
+  <button (click)="azzera()" >Azzera</button>
+  <button (click)="inc10()" *ngIf="numero>=10">Incrementa 10</button>
+  <button (click)="cancellaContatore()">Cancella</button>
+  <p *ngIf="numero>=20">Hai superato il massimo</p>
+  <p *ngIf="numero>10 && numero<20">sei a metà strada</p>
+</div>

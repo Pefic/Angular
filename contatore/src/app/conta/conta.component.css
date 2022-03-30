@@ -1,0 +1,27 @@
+div{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+h2{
+  margin: 20px auto;
+}
+p{
+  margin: 20px auto;
+}
+button{
+  padding: 20px;
+  margin: 5px;
+}
+
+.green{
+  background-color: aquamarine;
+}
+
+.yellow{
+  background-color: burlywood;
+}
+
+.red{
+  background-color: deeppink;
+}
