@@ -1,0 +1,14 @@
+.animalimg{
+  width: 300px;
+  border: 2px solid black;
+}
+.contenitore{
+  position: relative;
+}
+.label{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: large;
+}
