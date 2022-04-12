@@ -1,0 +1,46 @@
+<p>possiamo partire</p>
+<mat-card style="margin-inline: 20px;">
+
+    <form class="example-form" [formGroup]="MioFormGroup">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="required" formControlName="email" placeholder="Ex. pat@example.com">
+          <mat-error *ngIf="MioFormGroup.get('email').hasError('pattern')" >
+            Mail invalida
+          </mat-error>
+          <mat-error *ngIf="MioFormGroup.get('email').hasError('required')" >
+            La mail è <strong>necessaria</strong>
+          </mat-error>
+        </mat-form-field>
+    </form>
+
+     <!-- <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="text" matInput formControlName="nome" placeholder="Pinotto">
+          <mat-error *ngIf="MioFormGroup.get('nome').hasError('required')">
+            Inserisci un nome valido
+          </mat-error>
+          <mat-error *ngIf="MioFormGroup.hasError('required')">
+            Il nome è <strong>necessario</strong>
+          </mat-error>
+        </mat-form-field>
+    </form>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>eta</mat-label>
+          <input type="number" matInput formControlName="nome" placeholder="">
+          <mat-error *ngIf="MioFormGroup.get('eta').hasError('required')">
+            Età non valida
+          </mat-error >
+          <mat-error *ngIf="MioFormGroup.get('eta')?.haseError('min') || MioFormGroup.get('eta')?.haseError('max')">
+            Età <strong>richiesta</strong>
+          </mat-error>
+        </mat-form-field>
+    </form> -->
+
+
+      <mat-checkbox class="example-margin" formControlName="accetto">Check me!</mat-checkbox>
+      <button nat-raised-button color="accent" [disabled]="MioFormGroup.invalid" (click)="inviadati()">Invia Dati</button>
+</mat-card>
