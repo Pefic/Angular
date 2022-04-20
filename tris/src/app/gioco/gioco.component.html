@@ -1,0 +1,11 @@
+<p>E' il turno di {{turno}}</p>
+<div class="container">
+  <div *ngFor="let item of caselle;let i=index"(click)="selezioneCasella(i)" >
+    <img src="assets/png/cerchio.png" alt="" *ngIf="item==1">
+    <img src="assets/png/x.png" alt="" *ngIf="item==2">
+    <img src="assets/png/casella.png" alt="" *ngIf="item==0">
+  </div>
+</div>
+
+
+
